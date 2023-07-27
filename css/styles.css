@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+  /* --logo-main-color: #3d3d3d; */
+  --main-color: #1b4736;
+  --logo-main-color: #1b4736;
+
+  --hover-text-color: rgba(0, 38, 255, 0.664);
+  --hover-btn-text-color: #eefffd;
+  --hover-btn-bg-color: #1b4736;
+
+  --animation-style: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__icon {
+  fill: var(--logo-main-color);
+
+  transition: fill 250ms var(--animation-style);
+}
+
+.logo__text {
+  margin-left: 6px;
+
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 26px;
+  color: var(--logo-main-color);
+
+  transition: color 250ms var(--animation-style);
+}
+
+.logo:hover .logo__icon,
+.logo:hover .logo__text {
+  color: var(--hover-text-color);
+  fill: var(--hover-text-color);
+}
+
+/* Navigator */
+.nav__list {
+  display: inline-flex;
+}
+
+.nav__item {
+  display: block;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 2px;
+}
+
+.nav__link {
+  display: flex;
+  width: inherit;
+}
+
+.nav__text {
+  display: flex;
+  padding: 10px 24px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+
+  transition: color 250ms var(--animation-style),
+    background-color 250ms var(--animation-style);
+}
+
+.nav__item:hover .nav__text {
+  color: var(--hover-btn-text-color);
+  background-color: var(--hover-btn-bg-color);
+}
+
+.nav__link--before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
