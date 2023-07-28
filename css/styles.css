@@ -11,6 +11,24 @@
   --animation-style: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.page-header {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 20px;
+}
+
 /* Logo */
 .logo {
   display: inline-flex;
@@ -74,8 +92,9 @@
   background-color: var(--hover-btn-bg-color);
 }
 
-.nav__link--before {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Hero */
+.hero--overlay {
+  height: 160px;
+  background-image: url(../images/hero1.PNG);
+  border-image-repeat: no-repeat;
 }
