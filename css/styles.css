@@ -1,10 +1,11 @@
 /* Variables */
 :root {
   /* --logo-main-color: #3d3d3d; */
-  --main-color: #1b4736;
+  /* --main-color: #1b4736; */
+  --main-color: #000;
   --logo-main-color: #1b4736;
 
-  --hover-text-color: rgba(0, 38, 255, 0.664);
+  --hover-text-color: rgba(235, 114, 15, 0.664);
   --hover-btn-text-color: #eefffd;
   --hover-btn-bg-color: #1b4736;
 
@@ -93,8 +94,21 @@
 }
 
 /* Hero */
-.hero--overlay {
-  height: 160px;
-  background-image: url(../images/hero1.PNG);
-  border-image-repeat: no-repeat;
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/hero3.PNG);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: darkgrey;
 }
