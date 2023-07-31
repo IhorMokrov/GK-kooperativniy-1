@@ -21,7 +21,7 @@
 
 /* Header */
 .page-header {
-  border-bottom: 1px solid var(--main-color);
+  /* border-bottom: 1px solid var(--main-color); */
 }
 
 .page-header .container {
