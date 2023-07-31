@@ -3,6 +3,7 @@
   /* --logo-main-color: #3d3d3d; */
   /* --main-color: #1b4736; */
   --main-color: #000;
+  --primary-white-color: #fff;
   --logo-main-color: #1b4736;
 
   --hover-text-color: rgba(235, 114, 15, 0.664);
@@ -111,4 +112,41 @@
   background-size: cover;
   background-position: center;
   background-color: darkgrey;
+}
+
+.hero__container {
+  position: relative;
+  height: inherit;
+}
+
+/* Hero navigation buttons */
+.hero__nav {
+  position: absolute;
+
+  top: 90%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.nav__item--hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  background-color: var(--primary-white-color);
+  border-radius: 0;
+}
+.nav__link--hero {
+  display: block;
+  height: 100%;
+  outline: 1px solid green;
+}
+
+.nav__text--hero {
+  display: block;
+  height: inherit;
+  /* font-size: 20px; */
+  /* padding: 20px 30px; */
+  outline: 1px solid tomato;
 }
