@@ -86,14 +86,16 @@
 }
 
 .nav__text {
+  display: flex;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  border: 1px solid var(--primary-white-color);
 
   transition: color 250ms var(--animation-style),
     border-bottom-color 250ms var(--animation-style);
+
+  /* outline: 1px solid green; */
 }
 
 .nav__item:hover .nav__text {
@@ -102,9 +104,23 @@
 }
 
 .nav__text--current {
+  position: relative;
   color: var(--primary-green);
-  border-bottom: 2px solid var(--primary-green);
   font-weight: 600;
+}
+
+.nav__text--current::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  /* transform: translateY(250%); */
+
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: var(--primary-green);
+  border-radius: 2px;
 }
 
 /* Hero */
@@ -278,4 +294,8 @@
   margin-right: auto;
 
   outline: 1px solid tomato;
+}
+
+.footer {
+  background-color: bisque;
 }
