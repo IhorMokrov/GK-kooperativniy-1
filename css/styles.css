@@ -286,6 +286,7 @@
 
 /* Contacts: Schedule, Write Us, Map  */
 .contacts {
+  background-color: var(--primary-green);
 }
 
 .contacts__container {
@@ -296,6 +297,12 @@
   outline: 1px solid tomato;
 }
 
+/* Footer */
+
 .footer {
-  background-color: bisque;
+  padding: 20px 20px;
+}
+
+.footer__container {
+  display: flex;
 }
