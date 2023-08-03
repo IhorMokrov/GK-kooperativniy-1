@@ -286,13 +286,73 @@
 
 /* Contacts: Schedule, Write Us, Map  */
 .contacts {
+  padding: 20px 20px;
   background-color: var(--primary-green);
 }
 
 .contacts__container {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__headline {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: var(--primary-white-color);
+  font-weight: 400;
+}
+
+.contacts__list {
+  display: flex;
+}
+
+.contacts__item {
+  line-height: 1.4;
+  color: var(--primary-white-color);
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.write-us {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__write-us {
+  margin-top: 40px;
+}
+
+.write-us__textarea {
+  width: 400px;
+  height: 40px;
+  resize: none;
+}
+
+.write-us__button {
+  position: absolute;
+  right: 4px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 32px;
+  color: var(--primary-white-color);
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 4px;
+}
+
+.write-us__button:hover {
+  background-color: var(--primary-white-color);
+}
+
+.contacts__map {
+  /* margin-left: auto; */
 }
 
 /* Footer */
