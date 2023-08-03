@@ -263,7 +263,7 @@ summary {
 
 body {
   padding-top: 10px;
-  padding-bottom: 140px;
+  /* padding-bottom: 140px; */
   /* font-family: "DM Sans", sans-serif; */
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
