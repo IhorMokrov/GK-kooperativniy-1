@@ -148,13 +148,16 @@
                 </ul>
 
                 <form class="write-us contacts__write-us">
-                    <textarea class="write-us__textarea" placeholder="Написати нам"
-                        onfocus="expandTextarea(this.form, this)" onblur="shrinkTextarea(this)"></textarea>
+                    <textarea class="write-us__textarea" placeholder="Написати нам" <!--
+                        onfocus="expandTextarea(this.form, this)" onblur="shrinkTextarea(this)" -->
+
+
+                        ></textarea>
                     <button class="write-us__button" type="submit">Відправити</button>
                 </form>
             </div>
 
-
+            <!-- 
             <script>
                 function expandTextarea(form, textarea) {
                     form.style.position = "relative";
@@ -170,7 +173,35 @@
                     textarea.style.width = "540px";
                     textarea.style.height = "40px";
                 }
-            </script>
+            </script> -->
+
+            <!-- <script>
+                function expandTextarea(form, textarea) {
+                    form.style.position = "relative";
+                    textarea.style.position = "absolute";
+                    textarea.style.top = "0";
+                    textarea.style.left = "0";
+                    textarea.style.height = "600px";
+                }
+
+                function shrinkTextarea(textarea) {
+                    textarea.style.position = "static";
+                    textarea.style.height = "40px";
+                }
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    const form = document.querySelector(".write-us");
+                    const textarea = form.querySelector(".write-us__textarea");
+
+                    textarea.addEventListener("focus", function () {
+                        expandTextarea(form, this);
+                    });
+
+                    textarea.addEventListener("blur", function () {
+                        shrinkTextarea(this);
+                    });
+                });
+            </script> -->
 
 
             <iframe class="contacts__map"

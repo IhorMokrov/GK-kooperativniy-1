@@ -616,9 +616,10 @@ ul {
 .write-us {
   position: relative;
   display: flex;
+
   align-items: center;
 
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 
 .contacts__write-us {
@@ -626,7 +627,9 @@ ul {
 }
 
 .write-us__textarea {
-  display: flex;
+  position: absolute;
+  top: 0;
+  display: inline-flex;
   align-items: center;
   width: 540px;
   height: 40px;
