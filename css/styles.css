@@ -616,10 +616,10 @@ ul {
 .write-us {
   position: relative;
   display: flex;
+  width: 540px;
+  height: 40px;
 
   align-items: center;
-
-  outline: 1px solid tomato;
 }
 
 .contacts__write-us {
@@ -631,8 +631,8 @@ ul {
   top: 0;
   display: inline-flex;
   align-items: center;
-  width: 540px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   padding-left: 20px;
 
   border-radius: 4px;
@@ -669,6 +669,7 @@ ul {
   color: var(--primary-green); */
 
   background-color: #059473a1;
+  cursor: pointer;
 }
 
 .contacts__map {
